@@ -9,8 +9,38 @@ class Sextou extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: 'balada segura', 
-    home: Text('Sextou!')
+    return MaterialApp(
+      title: 'balada segura',
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Isso ai",
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              )),
+          backgroundColor: const Color.fromARGB(255, 255, 0, 255),
+          foregroundColor: const Color.fromARGB(255, 0, 255, 8),
+        ),
+        body: const Center(
+          child: const Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text("AAAAAAAAAAAAAAAAAAA"),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("1"),
+                  Text("2"),
+                  Text("3"),
+                ],
+              ),
+              Text("BBBBBBBBBBBBBBBBBB ")
+            ],
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: null),
+      ),
     );
   }
 }
